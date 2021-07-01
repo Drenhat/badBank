@@ -1,2 +1,4 @@
 # badBank
-An exercise than stimulate an online bank using React.js
+
+## Description
+An exercise than stimulates an online bank using React.js and Bootstrap
