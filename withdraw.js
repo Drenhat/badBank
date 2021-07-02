@@ -62,7 +62,7 @@ function Withdraw() {
         ctx.users[userIndex] = items[0];
         const email = ctx.users[userIndex].email
         logCtx.push({identification: email, operation: 'Withdraw', amount: amount, result: 'success'})
-        alert(`congratulation, you withdraw ${amount} inside your bank account`)
+        alert(`congratulation, you withdraw $${amount} inside your bank account`)
         setUser(...items);
     }
 
@@ -81,7 +81,7 @@ function Withdraw() {
                 onChange={e => setAmount(e.currentTarget.value)} /> <br/> 
                 {/* submission button */}
                 <button type="submit" className="btn btn-light" onClick=
-                {handleWithdrawal} disabled={amount === 0 }>Deposit</button>
+                {handleWithdrawal} disabled={amount === 0 }>Withdraw</button>
             </>
             ):( 
             <> 
