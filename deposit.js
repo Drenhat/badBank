@@ -59,7 +59,7 @@ function Deposit() {
         //this variable will be pushed as the name in the logCtx global variable;
         const email = ctx.users[userIndex].email
         logCtx.push({identification: email, operation: 'Deposit', amount: amount, result: 'success'})
-        alert(`Congratulation, you deposed ${amount} inside your bank account`)
+        alert(`Congratulation, you deposed $${amount} inside your bank account`)
         setUser(...items);
     }
 
